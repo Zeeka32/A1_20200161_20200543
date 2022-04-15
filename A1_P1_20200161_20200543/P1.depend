@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1650011185 source:c:\users\002\pictures\year2\second term\data_structure\assignment1\main.cpp
+	<iostream>
+	"BigInt.h"
+
+1650011537 c:\users\002\pictures\year2\second term\data_structure\assignment1\bigint.h
+	<iostream>
+
+1650011503 source:c:\users\002\pictures\year2\second term\data_structure\codeblocks\p1_20200161_20200543\bigint.cpp
+	"BigInt.h"
+	<iostream>
+	<algorithm>
+
+1650011537 c:\users\002\pictures\year2\second term\data_structure\codeblocks\p1_20200161_20200543\bigint.h
+	<iostream>
+
+1650011660 source:c:\users\002\pictures\year2\second term\data_structure\codeblocks\p1_20200161_20200543\main.cpp
+	<iostream>
+	"BigInt.h"
+
