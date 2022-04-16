@@ -67,12 +67,12 @@ int main (void) {
     songList.push_back ("HsOng");
     songList.push_back ("hsong");
     songList.push_back ("Untitled");
-    cout << "songlist before biased sort\n";
+    cout << "song list before biased sort\n";
     for (int i = 0; i < songList.size(); i++){
         cout << i+1 << '-' <<songList [i] << '\n';
     }
     biasedSort (songList);
-    cout << "\nsonglist after biased sort\n";
+    cout << "\nsong list after biased sort\n";
     for (int i = 0; i < songList.size(); i++){
         cout << i+1 << '-' <<songList [i] << '\n';
     }
