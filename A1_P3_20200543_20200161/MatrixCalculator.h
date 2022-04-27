@@ -21,7 +21,7 @@ public:
             int choice = 0;
             while (choice < 1 || choice > 5){
                 cout << "choice >> "; cin >> choice;
-                if (choice < 1 && choice > 5)
+                if (choice < 1 || choice > 5)
                     cout << "choice must be between 1-5" << endl;
             }
             if(choice == 1){
