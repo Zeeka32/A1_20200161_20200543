@@ -108,6 +108,7 @@ typename LinkedList<T>::Iterator LinkedList<T>:: erase (Iterator &position) {
     else if (position == tail_) {
         position--;
         pop_back ();
+        return position;
     }
     else if (position == end_){
         throw string("Error Out of bounds erase");
