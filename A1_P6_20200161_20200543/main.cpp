@@ -107,7 +107,7 @@ public:
         if(length == 0)
             return false;
 
-        if(length == 1 && firstName == f_name){
+        if(length == 1 && f_name == firstName[0]){
             length = 0;
             return true;
         }
