@@ -107,7 +107,7 @@ public:
         if(length == 0)
             return false;
 
-        if(length == 1){
+        if(length == 1 && firstName == f_name){
             length = 0;
             return true;
         }
@@ -247,9 +247,9 @@ int main(){
         }else if(choice == 5){
             entries.List_Directory();
         }else if(choice < 1 || choice > 6){
-            cout << "invalid choice please choose between 1 to 6";
+            cout << "invalid choice please choose between 1 to 6\n";
         }
     }
-    cout << "\nThanks for using the phone directory";
+    cout << "\nThanks for using the phone directory\n";
     return 0;
 }
