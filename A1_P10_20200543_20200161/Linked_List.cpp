@@ -183,6 +183,8 @@ LinkedList<T>:: ~LinkedList () {
     for (int i  = 0; i < size_; i++)
         pop_front ();
 }
+
+//Not Required for the Assignment this overload is to help show the list.
 template<class T2>
 ostream& operator << (ostream& out, LinkedList<T2>& rhs) {
     typename LinkedList<T2>::Node *current = rhs.head_;
