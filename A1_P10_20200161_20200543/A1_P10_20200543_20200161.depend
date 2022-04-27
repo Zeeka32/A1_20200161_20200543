@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1650480765 source:c:\users\002\downloads\data-structure-a1-main\data-structure-a1-main\a1_p10_20200543_20200161\linked_list.cpp
+	"Linked_List.h"
+
+1650480765 c:\users\002\downloads\data-structure-a1-main\data-structure-a1-main\a1_p10_20200543_20200161\linked_list.h
+	<iostream>
+
+1650480765 source:c:\users\002\downloads\data-structure-a1-main\data-structure-a1-main\a1_p10_20200543_20200161\main.cpp
+	<iostream>
+	"Linked_List.cpp"
+
+1650480765 c:\users\002\downloads\data-structure-a1-main\data-structure-a1-main\a1_p10_20200543_20200161\linked_list.cpp
+	"Linked_List.h"
+
+1651075916 source:c:\users\002\desktop\prog\codeblocks\a1_p10_20200161_20200543\linked_list.cpp
+	"Linked_List.h"
+
+1651074212 c:\users\002\desktop\prog\codeblocks\a1_p10_20200161_20200543\linked_list.h
+	<iostream>
+
+1651076020 source:c:\users\002\desktop\prog\codeblocks\a1_p10_20200161_20200543\main.cpp
+	<iostream>
+	"Linked_List.cpp"
+
+1651075916 c:\users\002\desktop\prog\codeblocks\a1_p10_20200161_20200543\linked_list.cpp
+	"Linked_List.h"
+
