@@ -113,12 +113,12 @@ public:
 
     }
 
-    void RunExperiment(Sorter *sorter, int type, int min, int max, int min_val, int max_val, int step){
+    void RunExperiment(Sorter *sorter, int type, int min, int max, int min_val, int max_val, int sets_num, int step){
 
         cout << "\tsize\taverage time\n";
         double averageTime = 0;
         for(int i = min_val; i <= max_val; i+= step){
-            averageTime = RunAndAverage(sorter, type, min, max, i, 50);
+            averageTime = RunAndAverage(sorter, type, min, max, i, sets_num);
             cout << "\t" << i << "\t" << averageTime << "\n";
         }
 
@@ -132,20 +132,21 @@ int main(void){
     Sorter *sorter2 = new QuickSorter;
 
     cout << "Selection Sort random data test (in microseconds)\n";
-    tester.RunExperiment(sorter1, 0, 100, 1000000, 1000, 10000, 1000);
-    cout << endl;
+    tester.RunExperiment(sorter1, 0, 100, 1000000, 1000, 10000, 50, 1000);
+    cout << "\n";
+    
 
     cout << "Selection Sort reversed sorted data test (in microseconds)\n";
-    tester.RunExperiment(sorter1, 1, 200, 1000000, 1000, 10000, 1000);
-    cout << endl;
+    tester.RunExperiment(sorter1, 1, 200, 1000000, 1000, 10000, 50, 1000);
+    cout << "\n";
 
     cout << "Quick Sort random data test (in microseconds)\n";
-    tester.RunExperiment(sorter2, 0, 200, 1000000, 1000, 10000, 1000);
-    cout << endl;
+    tester.RunExperiment(sorter2, 0, 200, 1000000, 1000, 10000, 50, 1000);
+    cout << "\n";
 
     cout << "Quick Sort reversed sorted data test (in microseconds)\n";
-    tester.RunExperiment(sorter2, 1, 200, 1000000, 1000, 10000, 1000);
-    cout << endl;
+    tester.RunExperiment(sorter2, 1, 200, 1000000, 1000, 10000, 50, 1000);
+    cout << "\n";
 
     cout << "Test complete.";
     return 0;
