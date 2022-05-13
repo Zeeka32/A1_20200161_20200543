@@ -14,7 +14,7 @@ public:
             for(int i = 0, j, least = i; i < size; i++){
 
             for(j = i+1, least = i; j < size; j++)
-                if(array[j] < array[least])
+                if(array[j] > array[least])
                     least = j;
 
             swap(array[i], array[least]);
