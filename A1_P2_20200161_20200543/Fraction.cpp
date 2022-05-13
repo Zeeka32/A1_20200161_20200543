@@ -65,19 +65,19 @@ void Fraction:: simplify (Fraction& fraction) {
 }
 
 bool Fraction:: operator == (const Fraction& rhs) {
-    return (rhs.numerator_/rhs.denomenator_ == numerator_/denomenator_);
+    return (rhs.numerator_ == numerator_ && denomenator_ == rhs.denomenator_);
 }
 bool Fraction:: operator >= (const Fraction& rhs) {
-    return (numerator_/denomenator_ >= rhs.numerator_/rhs.denomenator_);
+    return (numerator_ >= rhs.numerator_ && denomenator_ >= rhs.denomenator_);
 }
 bool Fraction:: operator <= (const Fraction& rhs) {
-    return (numerator_/denomenator_ <= rhs.numerator_/rhs.denomenator_);
+    return (numerator_ <= rhs.numerator_ && denomenator_ <= rhs.denomenator_);
 }
 bool Fraction:: operator > (const Fraction& rhs) {
-    return (numerator_/denomenator_ > rhs.numerator_/rhs.denomenator_);
+    return (numerator_ > rhs.denomenator_ && denomenator_ > rhs.denomenator_);
 }
 bool Fraction:: operator < (const Fraction& rhs) {
-    return (numerator_/denomenator_ < rhs.numerator_/rhs.denomenator_);
+    return (numerator_ < rhs.numerator_ && rhs.denomenator_ < denomenator_);
 }
 
 
